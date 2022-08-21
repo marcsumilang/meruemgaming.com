@@ -1,0 +1,7 @@
+Sitemap: https://mobilelegends.one/sitemap.xml
+User-Agent: *
+Crawl-delay: 120
+
+Disallow:
+Allow: /
+

@@ -1,0 +1,36 @@
+{
+    "theme_color": "#181830",
+    "background_color": "#EDF2F7",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Mobile Legends One",
+    "short_name": "Mobile Legends One",
+    "description": "Mobile Legends: Bang Bang Tournaments, News and Updates. Track and Be updated on MLBB tournaments on the world.",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
