@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Mereum Gaming",
-    "short_name": "Mereum Gaming",
-    "description": "Mereum Gaming Mobile legends Content Creator",
+    "name": "Meruem Gaming",
+    "short_name": "Meruem Gaming",
+    "description": "Meruem Gaming Mobile legends Content Creator",
     "icons": [
         {
             "src": "/icon-192x192.png",

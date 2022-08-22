@@ -186,7 +186,7 @@
 							<hr />
 							<SocialMediaButtons />
 							<hr />
-							<p class="text-center">Mereum Gaming. Be Updated. Be Legendary.</p>
+							<p class="text-center">Meruem Gaming. Be Updated. Be Legendary.</p>
 						</div>
 					</div>
 				</div>

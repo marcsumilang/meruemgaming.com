@@ -36,11 +36,6 @@
 			<a href="https://juicylegends.com" class="font-bold"> MOBA GAMES: juicylegends.com</a>
 		</p>
 		<p>
-			<a href="https://mereumgaming.com" class="font-bold">
-				Mobile Legends One Content Creator: meruemgaming.com</a
-			>
-		</p>
-		<p>
 			<a href="https://marcsumilang.com" class="font-bold"> Website Developer: marcsumilang.com</a>
 		</p>
 		<hr class="border-2 bg-neutral w-full" />
@@ -48,7 +43,7 @@
 	<div class="w-full md:w-1/3">
 		<span class="">Talents</span>
 		<p>
-			<a href="https://mereumgaming.com" class="font-bold">
+			<a href="https://meruemgaming.com" class="font-bold">
 				Mobile Legends One Content Creator: meruemgaming.com</a
 			>
 		</p>

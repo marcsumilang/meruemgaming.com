@@ -40,7 +40,7 @@
 </script>
 
 <PageSeo
-	pageName={`Mereum Gaming - Mobile legends Content Creator`}
+	pageName={`Meruem Gaming - Mobile legends Content Creator`}
 	pageDescription={`Meruem Gaming is a full time Mobile Legends Content Creator for Mobile Legends One Networks.`}
 	url="/"
 />
