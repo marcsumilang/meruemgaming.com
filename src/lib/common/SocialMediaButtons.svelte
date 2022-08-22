@@ -1,6 +1,6 @@
 <div class="grid grid-flow-col gap-4">
 	<a
-		href="https://www.youtube.com/channel/UCHHCN-s1Nf4WPimQYe_au_A"
+		href="https://www.youtube.com/channel/UCxxSyFY7deBlS6pMTXlOzEQ"
 		rel="external"
 		aria-label="Meruem Gaming Youtube Channel"
 		class="hover:bg-warning hover:text-white  p-1"

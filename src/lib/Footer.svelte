@@ -63,5 +63,8 @@
 		<a href="/disclaimer" class="link pt-4 pb-3">Disclaimer</a>
 		<a href="/about-me" class="link pt-4 pb-3">About Me</a>
 		<a href="/sitemaps/sitemap.xml" class="link pt-4 pb-3">Sitemap</a>
+		<a href="/sitemaps/hero-sitemap.xml" class="link pt-4 pb-3">Heroes Sitemap</a>
+		<a href="/sitemaps/top-5-by-difficulty-heroes.xml" class="link pt-4 pb-3">Difficulty Sitemap</a>
+		<a href="/sitemaps/top-heroes.xml" class="link pt-4 pb-3">Top Heroes Sitemap</a>
 	</div>
 </footer>
