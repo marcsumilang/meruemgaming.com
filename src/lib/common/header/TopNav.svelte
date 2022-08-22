@@ -118,7 +118,7 @@
 					<img
 						src="https://cdn.sanity.io/images/az4vt1in/production/2f78fbe3203a6c6ce82649f4f8456ff56c3762df-288x288.webp"
 						alt="Meruem Gaming Logo"
-						style="width: 100px; height: 100px;"
+						style="width: 75px; height: 75px;"
 					/>
 				</a>
 			</div>

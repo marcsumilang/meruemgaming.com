@@ -44,7 +44,7 @@
 		}
 		$pageViews = page_views;
 	}
-	$: page_views = 0;
+	$: page_views = 2;
 </script>
 
 {#if $page.url.origin != 'http://localhost:3000'}
@@ -53,8 +53,8 @@
 	{/if}
 	<DataUnblockScript />
 	<GoogleAnalytics
-		properties={['G-FQ61TBJF2N']}
-		configurations={{ 'G-FQ61TBJF2N': { send_page_view: true } }}
+		properties={['G-FK0RFCBXQM']}
+		configurations={{ 'G-FK0RFCBXQM': { send_page_view: true } }}
 	/>
 {/if}
 <div data-theme={$activeTheme} class="text-base-content bg-base-100 w-full">
