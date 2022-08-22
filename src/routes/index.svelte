@@ -45,18 +45,18 @@
 	url="/"
 />
 
-<div
-	class="hero min-h-96"
-	style="background-image: url(https://cdn.sanity.io/images/az4vt1in/production/ee9264fb507ccd3ddec1b8a7ac2d9b52233f3919-2048x1152.webp); background-size: cover;"
->
-	<div class="hero-overlay bg-opacity-60" />
+<div class="hero">
+	<div
+		class="hero-overlay bg-opacity-60"
+		style="background-image: url(https://cdn.sanity.io/images/az4vt1in/production/ee9264fb507ccd3ddec1b8a7ac2d9b52233f3919-2048x1152.webp); background-size: cover; background-position: center;"
+	/>
 	<div class="hero-content text-center ">
-		<div class="max-w-md">
-			<div class="hero  bg-base-200">
+		<div class="max-w-sm md:max-w-md">
+			<div class="hero bg-base-200">
 				<div class="hero-content flex-col lg:flex-row-reverse">
 					<img
 						src="https://cdn.sanity.io/images/az4vt1in/production/04492b1019433d9b5255c2cc1ee372c9df6749d7-595x352.png"
-						class="max-w-sm rounded-lg shadow-2xl"
+						class="md:max-w-sm rounded-lg shadow-2xl"
 						alt="Meruem Gaming Logo"
 					/>
 					<div>
