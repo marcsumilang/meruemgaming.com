@@ -25,6 +25,8 @@
 	import SideBar from '$lib/common/SideBar.svelte';
 	import AllHeroesText from '$lib/section/hero/AllHeroesText.svelte';
 	import IntroductionSection from '$lib/section/landing/IntroductionSection.svelte';
+	import YoutubeEmbed from '$lib/common/YoutubeEmbed.svelte';
+	import SectionText from '$lib/common/SectionText.svelte';
 	import dayjs from 'dayjs';
 
 	import { flip } from 'svelte/animate';
@@ -32,6 +34,7 @@
 	import { heroLinks } from '$lib/stores/heroStores';
 
 	export let apiHeroes;
+	export let youtubes;
 
 	heroLinks.set(apiHeroes);
 </script>
@@ -43,8 +46,8 @@
 />
 
 <div
-	class="hero min-h-screen"
-	style="background-image: url(https://cdn.sanity.io/images/az4vt1in/production/ee9264fb507ccd3ddec1b8a7ac2d9b52233f3919-2048x1152.webp);"
+	class="hero min-h-96"
+	style="background-image: url(https://cdn.sanity.io/images/az4vt1in/production/ee9264fb507ccd3ddec1b8a7ac2d9b52233f3919-2048x1152.webp); background-size: cover;"
 >
 	<div class="hero-overlay bg-opacity-60" />
 	<div class="hero-content text-center ">
@@ -66,4 +69,19 @@
 		</div>
 	</div>
 </div>
+
+{#if youtubes.length > 0}
+	<SectionText id="youtube-videos" title={`Youtube Tutorials and Gameplay`} />
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+		{#each youtubes as heroes, key}
+			{#each heroes.youtubeGuides.gallery as youtube, key}
+				<div>
+					<hr class="anchor" id={`youtube-embed-${key + 1}`} />
+					<YoutubeEmbed {youtube} />
+				</div>
+			{/each}
+		{/each}
+	</div>
+{/if}
+
 <AllHeroesText />

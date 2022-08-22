@@ -25,8 +25,8 @@
 						<SanityImage
 							image={youtube.banner}
 							alt={'Youtube Cover'}
-							maxWidth={1280}
-							maxHeight={500}
+							maxWidth={700}
+							maxHeight={380}
 						/>
 						<div class="centered w-12 group-hover:text-red-500"><FaPlayCircle /></div>
 					</div>
@@ -39,9 +39,17 @@
 	<div class="card-body">
 		<h2 class="card-title">
 			{youtube.title}
-			<div class="badge badge-secondary">Guide</div>
-			<div class="badge badge-secondary">Tutorial</div>
 		</h2>
+		<div class="flex flex-row gap-1">
+			{#if youtube?.length > 0}
+				{#each youtube.tags as tag}
+					<span class="badge badge-primary">{tag}</span>
+				{/each}
+			{:else}
+				<span class="badge badge-primary">Guide</span>
+				<span class="badge badge-primary">Tutorial</span>
+			{/if}
+		</div>
 		<p>
 			{youtube.description}
 		</p>

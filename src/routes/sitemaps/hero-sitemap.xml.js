@@ -1,17 +1,14 @@
 import { siteUrl } from '$lib/config/website';
+import { getHeroLinks } from '$lib/groq/heroesQueries';
+import { client } from '$lib/sanityClient';
 
 export async function get() {
-	const pages = [
-		'heroes',
-		'mlbb-hero-matchups',
-		'mlbb-hero-tiers-guide',
-		'mlbb-lane-tiers-guide',
-		'popular',
-		'popular/daily-mlbb-top-10-heroes',
-		'leaderboard',
-		'popular/hero-by-difficulty'
-	];
-	const body = sitemap(pages);
+	const data = await client.fetch(/* groq */ `{
+    "heroes": ${getHeroLinks()},
+  }
+  `);
+	const pages = [`heroes`];
+	const body = sitemap(data, pages);
 
 	const headers = {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
@@ -23,7 +20,7 @@ export async function get() {
 	};
 }
 
-const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
+const sitemap = (data, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset
   xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
@@ -32,11 +29,6 @@ const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
   xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 >
-  <url>
-    <loc>${siteUrl}</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
   ${pages
 		.map(
 			(page) => `
@@ -48,5 +40,19 @@ const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
   `
 		)
 		.join('')}
+ ${
+		data.heroes &&
+		data.heroes
+			.map(
+				(value) => `<url>
+                  <loc>${siteUrl}${value.slug.current}</loc>
+                  <changefreq>daily</changefreq>
+                  <priority>1.0</priority>
+                </url>
+                `
+			)
+			.join('')
+ }
+
 
 </urlset>`;

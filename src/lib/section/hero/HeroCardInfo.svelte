@@ -144,7 +144,7 @@
 		</div>
 		{#if $page.url.pathname != hero.slug.current}
 			<a class="w-full link flex gap-2" href={hero.slug.current}
-				>Learn more about {hero.name} build, spells and counters.
+				>Learn more about {hero.name} build, skills, combo, spells and counters.
 				<div class="w-6"><FaExternalLinkAlt /></div></a
 			>
 		{/if}

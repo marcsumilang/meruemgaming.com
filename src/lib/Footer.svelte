@@ -16,7 +16,7 @@
 		</a>
 		<p>Meruem Gaming<br />Be Updated. Be Legendary.</p>
 		<p>
-			<a href="https://mlbbhero.com" class="font-bold">MLBB HERO List: mlbbhero.com</a>
+			<a href="https://mlbbhero.com" class="font-bold">MLBB HERO BUILDS: mlbbhero.com</a>
 		</p>
 		<p>
 			<a href="https://mplseason.com" class="font-bold"
@@ -30,14 +30,29 @@
 			<a href="https://mobilelegends.one" class="font-bold">MLBB Tournaments: mobilelegends.one</a>
 		</p>
 		<p>
+			<a href="https://mpl.asia" class="font-bold">MLBB Tournaments in Asia: mpl.asia</a>
+		</p>
+		<p>
 			<a href="https://juicylegends.com" class="font-bold"> MOBA GAMES: juicylegends.com</a>
+		</p>
+		<p>
+			<a href="https://mereumgaming.com" class="font-bold">
+				Mobile Legends One Content Creator: meruemgaming.com</a
+			>
 		</p>
 		<p>
 			<a href="https://marcsumilang.com" class="font-bold"> Website Developer: marcsumilang.com</a>
 		</p>
 		<hr class="border-2 bg-neutral w-full" />
 	</div>
-	<div class="w-full md:w-1/3" />
+	<div class="w-full md:w-1/3">
+		<span class="">Talents</span>
+		<p>
+			<a href="https://mereumgaming.com" class="font-bold">
+				Mobile Legends One Content Creator: meruemgaming.com</a
+			>
+		</p>
+	</div>
 	<div class="w-full md:w-1/3">
 		<span class="">Social</span>
 		<div class="grid grid-flow-col gap-4">

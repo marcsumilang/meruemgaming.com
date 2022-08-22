@@ -1,4 +1,4 @@
-import { getHeroLinks, getHeroesWithYoutubeGuides } from '$lib/groq/heroesQueries';
+import { getHeroLinks } from '$lib/groq/heroesQueries';
 import { client } from '$lib/sanityClient';
 
 // Fetch all valid posts & authors to display in the homepage
@@ -6,7 +6,6 @@ import { client } from '$lib/sanityClient';
 export async function get() {
   const data = await client.fetch(/* groq */ `{
     "apiHeroes": ${getHeroLinks()},
-    "youtubes": ${getHeroesWithYoutubeGuides()},
   }
 `)
 

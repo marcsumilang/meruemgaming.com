@@ -31,8 +31,8 @@
 	$: _createdAt = dayjs(hero._createdAt).format('MMM DD, YYYY hh:mm A');
 	$: _updateAt = dayjs(hero._createdAt).format('MMM DD, YYYY hh:mm A');
 	$: name = hero.name;
-	$: eventTitle = `${name} best build for ${year} you should use.`;
-	$: eventDescription = `Simply using this best item setup and spells for ${name} in ${year} on Mobile Legends will give you an advantage in laning and even team figths.`;
+	$: eventTitle = `[S25-RON] ${name} build ${year} - Mobile Legends: Bang Bang`;
+	$: eventDescription = `Full details of ${name} build, item setup, skills, skill combo and spells on Mobile Legends Season 25 Rise if Necrokeep - Build for supremacy.`;
 </script>
 
 <MetaTags

@@ -143,6 +143,11 @@ export function getPatches() {
   name,slug, releaseDate
    }`;
 }
+export function getHeroesWithYoutubeGuides() {
+	return /* groq */ `  *[_type == "hero" && youtubeGuides != null  && !(_id in path("drafts.**"))]{
+ name, youtubeGuides
+   }`;
+}
 
 const HERO_SEARCH_SCHEMA = `
 "id": _id,

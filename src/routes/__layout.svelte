@@ -62,14 +62,14 @@
 	<TopNav />
 	<SvelteToast />
 	<div class="w-full p-2">
-		<SearchInput />
+		<SuggestedPages />
 	</div>
 
 	<main style="" class="m-0 p-0">
 		<div class="px-2 lg:px-4 ">
 			<slot />
 		</div>
-		<SuggestedPages />
+
 		<IntroductionSection />
 	</main>
 	{#if $page.url.origin != 'http://localhost:3000'}
