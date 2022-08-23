@@ -7,17 +7,12 @@
 	import NProgress from 'nprogress';
 	import { navigating, page } from '$app/stores';
 	import { ScrollProgressBar } from 'svelte-scroll-progress-bar';
-	import SearchInput from '$lib/common/header/SearchInput.svelte';
-	import { getProfile, userSession } from '$lib/stores/sessionStores';
 	import { activeTheme } from '$lib/helpers/global';
 	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
-	import { supabase } from '$lib/supabase/supabaseClient';
-	import ProfileModal from '$lib/common/modal/ProfileModal.svelte';
 	import SuggestedPages from '$lib/widgets/SuggestedPages.svelte';
 	import IntroductionSection from '$lib/section/landing/IntroductionSection.svelte';
 	import { pageViews } from '$lib/stores/navigationStores';
 	import GoogleGridBasedAds from '$lib/ads/GoogleGridBasedAds.svelte';
-	import DataUnblockScript from '$lib/ads/DataUnblockScript.svelte';
 	import { onMount } from 'svelte';
 	import AllAds from '$lib/ads/AllAds.svelte';
 
@@ -44,7 +39,7 @@
 		}
 		$pageViews = page_views;
 	}
-	$: page_views = 2;
+	$: page_views = 0;
 </script>
 
 {#if $page.url.origin != 'http://localhost:3000'}
