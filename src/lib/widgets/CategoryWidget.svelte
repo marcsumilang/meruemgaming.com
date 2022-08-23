@@ -27,11 +27,11 @@
 		},
 		{
 			title: 'Lane Tiers',
-			slug: '/mlbb-lane-tiers-guide'
+			slug: '/mlbb-lane-tiers'
 		},
 		{
 			title: 'Hero Tiers',
-			slug: '/mlbb-hero-tiers-guide'
+			slug: '/mlbb-hero-tiers'
 		},
 		{
 			title: 'Top 5 Marksman',
@@ -59,7 +59,7 @@
 		},
 		{
 			title: 'Top 5 Heroes per Category',
-			slug: '/popular/daily-mlbb-top-5-heroes'
+			slug: '/popular/daily-mlbb-top-10-heroes'
 		},
 		{
 			title: 'Popular',

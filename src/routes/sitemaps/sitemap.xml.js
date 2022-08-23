@@ -4,8 +4,8 @@ export async function get() {
 	const pages = [
 		'heroes',
 		'mlbb-hero-matchups',
-		'mlbb-hero-tiers-guide',
-		'mlbb-lane-tiers-guide',
+		'mlbb-hero-tiers',
+		'mlbb-lane-tiers',
 		'popular',
 		'popular/daily-mlbb-top-10-heroes',
 		'leaderboard',

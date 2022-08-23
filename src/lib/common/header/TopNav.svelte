@@ -61,7 +61,7 @@
 		},
 		{
 			title: 'Top 5 Heroes per Category',
-			slug: '/popular/daily-mlbb-top-5-heroes'
+			slug: '/popular/daily-mlbb-top-10-heroes'
 		},
 		{
 			title: 'Popular',

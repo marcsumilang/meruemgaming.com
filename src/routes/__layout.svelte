@@ -51,7 +51,6 @@
 	{#if page_views > 1}
 		<AllAds />
 	{/if}
-	<DataUnblockScript />
 	<GoogleAnalytics
 		properties={['G-FK0RFCBXQM']}
 		configurations={{ 'G-FK0RFCBXQM': { send_page_view: true } }}
